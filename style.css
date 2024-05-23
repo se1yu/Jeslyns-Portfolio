@@ -1,0 +1,13 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+img {
+  width: 200px;
+} /* yay, all images 200 px width now
+*/ 
+body {
+  text-align: center;
+  background: #c3d4d5;
+  color:#2d273a;
+}
