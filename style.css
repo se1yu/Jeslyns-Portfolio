@@ -3,11 +3,13 @@ html {
   width: 100%;
 }
 img {
-  width: 200px;
+  height: 200px;
+  
 } /* yay, all images 200 px width now
 */ 
+/* will figure out how to add a grid of images of custom sizes, and fade load, figure out if the og website will be banned off so if i need to reupload images later, also add other sections after photos*/
 body {
-  text-align: center;
+  text-align: left;
   background: #c3d4d5;
   color:#2d273a;
 }
