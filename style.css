@@ -1,4 +1,45 @@
+*{
+  padding:0;
+  margin:0;
+}
 
+.container{
+  max-width:1224px;
+  width:90%;
+  margin: 0px auto;
+}
+
+.title{
+  margin-bottom: 2rem;
+}
+
+.photo-gallery{
+  display:flex;
+  gap:20px;
+  
+}
+
+.column{
+ display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.photo img{
+  width:100%;
+  height:100%;
+border-radius: 5px;
+  object-fit: cover;
+  float:left;
+  margin:10px;
+}
+
+@media(max-width:768px){
+  .photo-gallery{
+    flex-direction: column;
+  }
+}
+)
 html {
   height: 100%;
   width: 100%;
@@ -11,42 +52,22 @@ img {
 /* will figure out how to add a grid of images of custom sizes, and fade load, figure out if the og website will be banned off so if i need to reupload images later, also add other sections after photos*/
 body {
   text-align: center;
-  background: #c3d4d5;
+  background: #f2fdfd;
   color:#2d273a;
-  background-image: url("https://cloud-e2jyb8csc-hack-club-bot.vercel.app/3image.png");
-  height: 90vh;
+  background-color: #78a4bf;
+  height: 90vh; 
   background-size: cover;
   background-repeat: no-repeat;
   
 }
-@font-face {
-  font-family: 'Florida Vibes';
-  src: url('/Fonts/florida-vibes.regular.ttf') format('truetype');
-}
+
 
 .jessy {
   font-size: 100px;
   margin-top: -10px;
-  font-family: 'Florida Vibes', sans-serif;
+  font-family: 'Pacifico', cursive;
 }
 
-/* Add grid of images with custom sizes and fade load */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
-}
-
-.image-grid img {
-  width: 100%;
-  height: auto;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.image-grid img.loaded {
-  opacity: 1;
-}
 
 /* Add other sections after photos */
 .other-sections {
